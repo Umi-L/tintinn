@@ -15,5 +15,4 @@ public:
     static void cleanup();
 
     static Vector2 getJoystickPos(int joyNum);
-
 };
