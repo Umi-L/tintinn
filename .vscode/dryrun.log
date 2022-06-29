@@ -1,0 +1,28 @@
+make.exe --dry-run --always-make --keep-going --print-directory
+make: Entering directory '/home/julia/OneDrive/Desktop/Code/sdl2/Daybreak'
+ 
+[ -d build ] || mkdir -p build
+make --no-print-directory -C build -f /home/julia/OneDrive/Desktop/Code/sdl2/Daybreak/Makefile
+ 
+echo Input.cpp
+aarch64-none-elf-g++ -MMD -MP -MF /home/julia/OneDrive/Desktop/Code/sdl2/Daybreak/build/Input.d `aarch64-none-elf-pkg-config --cflags sdl2 SDL2_mixer SDL2_image` -Wall -O2 -ffunction-sections -march=armv8-a+crc+crypto -mtune=cortex-a57 -mtp=soft -fPIE  -I/home/julia/OneDrive/Desktop/Code/sdl2/Daybreak/include -I/home/julia/OneDrive/Desktop/Code/sdl2/Daybreak/source/include -I/home/julia/OneDrive/Desktop/Code/sdl2/Daybreak/libs -I/opt/devkitpro//portlibs/switch/include -I/opt/devkitpro//libnx/include -I/home/julia/OneDrive/Desktop/Code/sdl2/Daybreak/build -D__SWITCH__ -fno-rtti -fno-exceptions -c /home/julia/OneDrive/Desktop/Code/sdl2/Daybreak/source/Input.cpp -o Input.o 
+ 
+echo Renderer.cpp
+aarch64-none-elf-g++ -MMD -MP -MF /home/julia/OneDrive/Desktop/Code/sdl2/Daybreak/build/Renderer.d `aarch64-none-elf-pkg-config --cflags sdl2 SDL2_mixer SDL2_image` -Wall -O2 -ffunction-sections -march=armv8-a+crc+crypto -mtune=cortex-a57 -mtp=soft -fPIE  -I/home/julia/OneDrive/Desktop/Code/sdl2/Daybreak/include -I/home/julia/OneDrive/Desktop/Code/sdl2/Daybreak/source/include -I/home/julia/OneDrive/Desktop/Code/sdl2/Daybreak/libs -I/opt/devkitpro//portlibs/switch/include -I/opt/devkitpro//libnx/include -I/home/julia/OneDrive/Desktop/Code/sdl2/Daybreak/build -D__SWITCH__ -fno-rtti -fno-exceptions -c /home/julia/OneDrive/Desktop/Code/sdl2/Daybreak/source/Renderer.cpp -o Renderer.o 
+ 
+echo Sprite.cpp
+aarch64-none-elf-g++ -MMD -MP -MF /home/julia/OneDrive/Desktop/Code/sdl2/Daybreak/build/Sprite.d `aarch64-none-elf-pkg-config --cflags sdl2 SDL2_mixer SDL2_image` -Wall -O2 -ffunction-sections -march=armv8-a+crc+crypto -mtune=cortex-a57 -mtp=soft -fPIE  -I/home/julia/OneDrive/Desktop/Code/sdl2/Daybreak/include -I/home/julia/OneDrive/Desktop/Code/sdl2/Daybreak/source/include -I/home/julia/OneDrive/Desktop/Code/sdl2/Daybreak/libs -I/opt/devkitpro//portlibs/switch/include -I/opt/devkitpro//libnx/include -I/home/julia/OneDrive/Desktop/Code/sdl2/Daybreak/build -D__SWITCH__ -fno-rtti -fno-exceptions -c /home/julia/OneDrive/Desktop/Code/sdl2/Daybreak/source/Sprite.cpp -o Sprite.o 
+ 
+echo main.cpp
+aarch64-none-elf-g++ -MMD -MP -MF /home/julia/OneDrive/Desktop/Code/sdl2/Daybreak/build/main.d `aarch64-none-elf-pkg-config --cflags sdl2 SDL2_mixer SDL2_image` -Wall -O2 -ffunction-sections -march=armv8-a+crc+crypto -mtune=cortex-a57 -mtp=soft -fPIE  -I/home/julia/OneDrive/Desktop/Code/sdl2/Daybreak/include -I/home/julia/OneDrive/Desktop/Code/sdl2/Daybreak/source/include -I/home/julia/OneDrive/Desktop/Code/sdl2/Daybreak/libs -I/opt/devkitpro//portlibs/switch/include -I/opt/devkitpro//libnx/include -I/home/julia/OneDrive/Desktop/Code/sdl2/Daybreak/build -D__SWITCH__ -fno-rtti -fno-exceptions -c /home/julia/OneDrive/Desktop/Code/sdl2/Daybreak/source/main.cpp -o main.o 
+echo linking Daybreak.elf
+aarch64-none-elf-g++ -specs=/opt/devkitpro//libnx/switch.specs -g -march=armv8-a+crc+crypto -mtune=cortex-a57 -mtp=soft -fPIE -Wl,-Map,Daybreak.map  Input.o Renderer.o Sprite.o main.o   -L/opt/devkitpro//portlibs/switch/lib -L/opt/devkitpro//libnx/lib `aarch64-none-elf-pkg-config --libs sdl2 SDL2_mixer SDL2_image SDL2_ttf` -lnx -o /home/julia/OneDrive/Desktop/Code/sdl2/Daybreak/Daybreak.elf
+aarch64-none-elf-gcc-nm -CSn /home/julia/OneDrive/Desktop/Code/sdl2/Daybreak/Daybreak.elf > Daybreak.lst
+ 
+nacptool --create "Daybreak" "Umi" "1.0.0" /home/julia/OneDrive/Desktop/Code/sdl2/Daybreak/Daybreak.nacp 
+echo built ... Daybreak.nacp
+elf2nro /home/julia/OneDrive/Desktop/Code/sdl2/Daybreak/Daybreak.elf /home/julia/OneDrive/Desktop/Code/sdl2/Daybreak/Daybreak.nro --icon=/home/julia/OneDrive/Desktop/Code/sdl2/Daybreak/icon.jpg --nacp=/home/julia/OneDrive/Desktop/Code/sdl2/Daybreak/Daybreak.nacp --romfsdir=/home/julia/OneDrive/Desktop/Code/sdl2/Daybreak/romfs
+echo built ... Daybreak.nro
+ 
+make: Leaving directory '/home/julia/OneDrive/Desktop/Code/sdl2/Daybreak'
+ 

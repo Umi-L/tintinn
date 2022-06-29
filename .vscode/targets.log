@@ -1,0 +1,545 @@
+make.exe all --print-data-base --no-builtin-variables --no-builtin-rules --question
+# GNU Make 4.3
+# Built for x86_64-pc-msys
+# Copyright (C) 1988-2020 Free Software Foundation, Inc.
+# License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+# This is free software: you are free to change and redistribute it.
+# There is NO WARRANTY, to the extent permitted by law.
+ 
+
+# Make data base, printed on Thu May 12 17:40:49 2022
+
+# Variables
+
+ 
+# environment
+SYSTEMDRIVE = C:
+# environment
+JAVA_HOME = C:\Program Files\OpenJDK\jdk-8.0.262.10-hotspot\
+# makefile (from '/opt/devkitpro//devkitA64/base_tools', line 20)
+PORTLIBS_PATH := /opt/devkitpro//portlibs
+# makefile (from '/opt/devkitpro//devkitA64/base_tools', line 30)
+AS := aarch64-none-elf-as
+# makefile (from 'Makefile', line 82)
+OUTPUT := /home/julia/OneDrive/Desktop/Code/sdl2/Daybreak/Daybreak
+# environment
+LC_ALL = C
+# environment
+VBOX_HWVIRTEX_IGNORE_SVM_IN_USE = 1
+# makefile (from '/opt/devkitpro//devkitA64/base_tools', line 31)
+AR := aarch64-none-elf-gcc-ar
+# environment
+USERPROFILE = C:\Users\julia
+# environment
+VBOX_MSI_INSTALL_PATH = D:\ProgramFiles\VirtualBox\
+# makefile (from 'Makefile', line 102)
+OFILES :=  Input.o Renderer.o Sprite.o main.o  
+# environment
+LOCALAPPDATA = C:\Users\julia\AppData\Local
+# environment
+VSCODE_IPC_HOOK_EXTHOST = \\.\pipe\vscode-ipc-8eb44cb8-c450-49ca-9b7c-030ce77bee37-sock
+# makefile (from 'Makefile', line 85)
+VPATH := /home/julia/OneDrive/Desktop/Code/sdl2/Daybreak/source /home/julia/OneDrive/Desktop/Code/sdl2/Daybreak/data
+# makefile (from 'Makefile', line 90)
+CFILES := 
+# environment
+VSCODE_CWD = C:\Users\julia\AppData\Local\Programs\Microsoft VS Code
+# environment
+SYSTEMROOT = C:\WINDOWS
+# makefile (from 'Makefile', line 65)
+LIBS := `aarch64-none-elf-pkg-config --libs sdl2 SDL2_mixer SDL2_image SDL2_ttf` -lnx
+# makefile (from '/opt/devkitpro//devkitA64/base_tools', line 50)
+SILENTMSG := @echo
+# environment
+PROCESSOR_LEVEL = 23
+# environment
+PSMODULEPATH = C:\Program Files\WindowsPowerShell\Modules;C:\WINDOWS\system32\WindowsPowerShell\v1.0\Modules
+# default
+MAKE_COMMAND := make
+# makefile (from '/opt/devkitpro//libnx/switch_rules', line 21)
+APP_VERSION := 1.0.0
+# makefile (from 'Makefile', line 100)
+OFILES_BIN := 
+# automatic
+@D = $(patsubst %/,%,$(dir $@))
+# environment
+CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_13204_FXCNMHSVRMYMZMUY
+# makefile (from 'Makefile', line 91)
+CPPFILES := Input.cpp Renderer.cpp Sprite.cpp main.cpp
+# makefile (from '/opt/devkitpro//libnx/switch_rules', line 10)
+LIBNX = $(DEVKITPRO)/libnx
+# environment
+VSCODE_HANDLES_UNCAUGHT_ERRORS = true
+# default
+.VARIABLES := 
+# automatic
+%D = $(patsubst %/,%,$(dir $%))
+# automatic
+^D = $(patsubst %/,%,$(dir $^))
+# environment
+VSCODE_LOG_STACK = false
+# automatic
+%F = $(notdir $%)
+# makefile (from '/opt/devkitpro//libnx/switch_rules', line 39)
+define make_pfs0
+	@mkdir -p exefs
+	@[ $(BUILD_EXEFS_SRC) ] && [ -d $(BUILD_EXEFS_SRC) ] && cp -R $(BUILD_EXEFS_SRC)/* exefs || echo > /dev/null
+	@cp $*.nso exefs/main
+	@[ $(APP_JSON) ] && cp $*.npdm exefs/main.npdm || echo > /dev/null
+	@build_pfs0 exefs $@
+	@echo built ... $(notdir $@)
+endef
+# environment
+VSCODE_CODE_CACHE_PATH = C:\Users\julia\AppData\Roaming\Code\CachedData\da15b6fd3ef856477bf6f4fb29ba1b7af717770d
+# environment
+LANG = C
+# default
+.LOADED := 
+# environment
+TMP = /home/julia/AppData/Local/Temp
+# default
+.INCLUDE_DIRS = /usr/include /usr/include
+# makefile
+MAKEFLAGS = pqrR
+# makefile (from 'Makefile', line 92)
+SFILES := 
+# environment
+ONEDRIVE = C:\Users\julia\OneDrive
+# environment
+DEVKITARM = /opt/devkitpro/devkitARM
+ 
+# makefile
+CURDIR := /home/julia/OneDrive/Desktop/Code/sdl2/Daybreak
+# environment
+VSCODE_PIPE_LOGGING = true
+# environment
+APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = 1
+# automatic
+*D = $(patsubst %/,%,$(dir $*))
+# makefile (from 'Makefile', line 88)
+DEPSDIR := /home/julia/OneDrive/Desktop/Code/sdl2/Daybreak/build
+# environment
+PROGRAMFILES = C:\Program Files
+# environment
+MFLAGS = -pqrR
+# default
+.SHELLFLAGS := -c
+# environment
+!C: = c:\Users\julia\OneDrive\Desktop\Code\sdl2\Daybreak
+# environment
+COMMONPROGRAMW6432 = C:\Program Files\Common Files
+# automatic
++D = $(patsubst %/,%,$(dir $+))
+# makefile (from '/opt/devkitpro//devkitA64/base_tools', line 1)
+MAKEFILE_LIST := Makefile /opt/devkitpro//libnx/switch_rules /opt/devkitpro//devkitA64/base_rules /opt/devkitpro//devkitA64/base_tools
+# makefile (from 'Makefile', line 62)
+ASFLAGS := -g -march=armv8-a+crc+crypto -mtune=cortex-a57 -mtp=soft -fPIE
+# automatic
+@F = $(notdir $@)
+# environment
+VSCODE_VERBOSE_LOGGING = true
+# environment
+VSCODE_PID = 13204
+# environment
+CLION = D:\ProgramFiles\Jetbrains\CLion 2022.1\bin;
+# automatic
+?D = $(patsubst %/,%,$(dir $?))
+# makefile (from '/opt/devkitpro//devkitA64/base_tools', line 35)
+RANLIB := aarch64-none-elf-gcc-ranlib
+# environment
+DEVKITPPC = /opt/devkitpro/devkitPPC
+# makefile (from 'Makefile', line 48)
+APP_AUTHOR := Umi
+# makefile (from 'Makefile', line 44)
+INCLUDES := include source/include libs
+# makefile (from 'Makefile', line 125)
+icons := icon.jpg
+# automatic
+*F = $(notdir $*)
+# automatic
+<D = $(patsubst %/,%,$(dir $<))
+# environment
+VSCODE_NLS_CONFIG = {"locale":"en-us","availableLanguages":{},"_languagePackSupport":true}
+# makefile (from 'Makefile', line 130)
+APP_ICON := /home/julia/OneDrive/Desktop/Code/sdl2/Daybreak/icon.jpg
+# makefile (from 'Makefile', line 105)
+INCLUDE := -I/home/julia/OneDrive/Desktop/Code/sdl2/Daybreak/include -I/home/julia/OneDrive/Desktop/Code/sdl2/Daybreak/source/include -I/home/julia/OneDrive/Desktop/Code/sdl2/Daybreak/libs -I/opt/devkitpro//portlibs/switch/include -I/opt/devkitpro//libnx/include -I/home/julia/OneDrive/Desktop/Code/sdl2/Daybreak/build
+# default
+MAKE_HOST := x86_64-pc-msys
+# environment
+PROGRAMDATA = C:\ProgramData
+# default
+SHELL := /bin/sh
+# environment
+HOMEPATH = \Users\julia
+# default
+MAKECMDGOALS := all
+# environment
+DRIVERDATA = C:\Windows\System32\Drivers\DriverData
+# environment
+COMSPEC = C:\WINDOWS\system32\cmd.exe
+# environment
+WINDIR = C:\WINDOWS
+# makefile (from 'Makefile', line 93)
+BINFILES := 
+# environment
+MAKELEVEL := 0
+# makefile (from 'Makefile', line 109)
+LIBPATHS := -L/opt/devkitpro//portlibs/switch/lib -L/opt/devkitpro//libnx/lib
+# default
+MAKE = $(MAKE_COMMAND)
+# makefile (from '/opt/devkitpro//libnx/switch_rules', line 8)
+ 
+PATH := /opt/devkitpro//portlibs/switch/bin:/opt/devkitpro//tools/bin:/opt/devkitpro//devkitA64/bin:/c/Program Files/OpenJDK/jdk-8.0.262.10-hotspot/bin:/opt/devkitpro/msys2/usr/bin:/c/Program Files/Common Files/Oracle/Java/javapath:/c/Program Files (x86)/Common Files/Oracle/Java/javapath:/c/WINDOWS/system32:/c/WINDOWS:/c/WINDOWS/System32/Wbem:/c/WINDOWS/System32/WindowsPowerShell/v1.0:/c/WINDOWS/System32/OpenSSH:/c/Program Files/Microsoft SQL Server/150/Tools/Binn:/c/Program Files/Microsoft SQL Server/Client SDK/ODBC/170/Tools/Binn:/c/Program Files/dotnet:/c/Program Files/GitHub CLI:/c/Program Files/Git/cmd:/c/Program Files (x86)/Calibre2:/c/Program Files/nodejs:/home/julia/AppData/Local/Programs/Python/Python310/Scripts:/home/julia/AppData/Local/Programs/Python/Python310:/home/julia/AppData/Local/Microsoft/WindowsApps:/home/julia/AppData/Local/Programs/Microsoft VS Code/bin:/home/julia/.dotnet/tools:/c/Program Files/JetBrains/PyCharm Community Edition 2021.3.2/bin:/c/src/flutter/bin:/home/julia/AppData/Roaming/npm:/home/julia/AppData/Roaming/lovebrew:/opt/devkitpro/devkitA64/bin:/opt/devkitpro/tools/bin:/c/Program Files/LOVE/love.exe:/c/mingw64/bin:/d/ProgramFiles/Jetbrains/IntelliJ IDEA 2022.1/bin:/d/ProgramFiles/Jetbrains/PyCharm 2022.1/bin:/d/ProgramFiles/Jetbrains/CLion 2022.1/bin
+# environment
+COMPUTERNAME = DESKTOP-65FQ8DL
+# default
+MAKEFILES := 
+# automatic
+^F = $(notdir $^)
+# makefile (from '/opt/devkitpro//devkitA64/base_tools', line 5)
+UNAME_R := 3.3.4-341.x86_64
+# environment
+PYCHARM = D:\ProgramFiles\Jetbrains\PyCharm 2022.1\bin;
+# makefile (from 'Makefile', line 112)
+jsons := CppProperties.json
+# environment
+PROMPT = $P$G
+# environment
+INTELLIJ IDEA = D:\ProgramFiles\Jetbrains\IntelliJ IDEA 2022.1\bin;
+# makefile (from '/opt/devkitpro//devkitA64/base_tools', line 26)
+PREFIX := aarch64-none-elf-
+# makefile (from 'Makefile', line 72)
+LIBDIRS := /opt/devkitpro//portlibs/switch /opt/devkitpro//libnx
+# environment
+LOGONSERVER = \\DESKTOP-65FQ8DL
+# environment
+VSCODE_LOG_NATIVE = false
+# environment
+USERNAME = julia
+# environment
+COMMONPROGRAMFILES = C:\Program Files\Common Files
+# automatic
+?F = $(notdir $?)
+# makefile (from '/opt/devkitpro//devkitA64/base_tools', line 57)
+bin2o = 	bin2s -a 8 -H `(echo $(<F) | tr . _)`.h $< | $(AS) -o $(<F).o
+# environment
+PROGRAMW6432 = C:\Program Files
+# environment
+DEVKITPRO = /opt/devkitpro/
+# makefile (from '/opt/devkitpro//devkitA64/base_tools', line 4)
+UNAME_S := MSYS_NT-10.0-19044
+# environment
+PATHEXT = .COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC
+# automatic
++F = $(notdir $+)
+# environment
+ORIGINAL_XDG_CURRENT_DESKTOP = undefined
+# environment
+USERDOMAIN = DESKTOP-65FQ8DL
+# 'override' directive
+GNUMAKEFLAGS := 
+# environment
+OS = Windows_NT
+# environment
+__COMPAT_LAYER = DetectorsAppHealth
+# makefile
+.DEFAULT_GOAL := all
+# makefile (from 'Makefile', line 53)
+ARCH := -march=armv8-a+crc+crypto -mtune=cortex-a57 -mtp=soft -fPIE
+# default
+MAKE_VERSION := 4.3
+# 'override' directive
+.SHELLSTATUS := 0
+# makefile (from 'Makefile', line 101)
+OFILES_SRC := Input.o Renderer.o Sprite.o main.o  
+# makefile (from '/opt/devkitpro//devkitA64/base_tools', line 51)
+SILENTCMD := @
+# environment
+PROGRAMFILES(X86) = C:\Program Files (x86)
+# makefile (from 'Makefile', line 41)
+BUILD := build
+# makefile (from 'Makefile', line 83)
+TOPDIR := /home/julia/OneDrive/Desktop/Code/sdl2/Daybreak
+# makefile (from 'Makefile', line 63)
+LDFLAGS = -specs=$(DEVKITPRO)/libnx/switch.specs -g $(ARCH) -Wl,-Map,$(notdir $*.map)
+# environment
+USERDOMAIN_ROAMINGPROFILE = DESKTOP-65FQ8DL
+# environment
+NUMBER_OF_PROCESSORS = 16
+# makefile (from '/opt/devkitpro//devkitA64/base_tools', line 37)
+ISVC = $(or $(VCBUILDHELPER_COMMAND),$(MSBUILDEXTENSIONSPATH32),$(MSBUILDEXTENSIONSPATH))
+# environment
+PUBLIC = C:\Users\Public
+# environment
+APPDATA = C:\Users\julia\AppData\Roaming
+# makefile (from 'Makefile', line 58)
+ 
+CFLAGS := `aarch64-none-elf-pkg-config --cflags sdl2 SDL2_mixer SDL2_image` -Wall -O2 -ffunction-sections -march=armv8-a+crc+crypto -mtune=cortex-a57 -mtp=soft -fPIE   -D__SWITCH__
+# environment
+HOMEDRIVE = C:
+# environment
+PROCESSOR_ARCHITECTURE = AMD64
+# makefile (from 'Makefile', line 150)
+NROFLAGS = --icon=$(APP_ICON) --nacp=$(CURDIR)/$(TARGET).nacp --romfsdir=$(CURDIR)/$(ROMFS)
+# environment
+PYCHARM COMMUNITY EDITION = C:\Program Files\JetBrains\PyCharm Community Edition 2021.3.2\bin;
+# environment
+VSCODE_AMD_ENTRYPOINT = vs/workbench/api/node/extensionHostProcess
+# environment
+HOME = /home/julia
+# environment
+COMMONPROGRAMFILES(X86) = C:\Program Files (x86)\Common Files
+# makefile (from '/opt/devkitpro//devkitA64/base_tools', line 14)
+DEVKITPATH = $(shell echo "$(DEVKITPRO)" | sed -e 's/^\([a-zA-Z]\):/\/\1/')
+# makefile (from '/opt/devkitpro//libnx/switch_rules', line 7)
+PORTLIBS := /opt/devkitpro//portlibs/switch
+# environment
+ELECTRON_RUN_AS_NODE = 1
+# environment
+TEMP = /home/julia/AppData/Local/Temp
+# environment
+VSCODE_IPC_HOOK = \\.\pipe\f36f7e8fc164d200a4a11433759b0c3e-1.67.1-main-sock
+# environment
+TERM = xterm-256color
+# makefile (from '/opt/devkitpro//devkitA64/base_tools', line 34)
+NM := aarch64-none-elf-gcc-nm
+# default
+.RECIPEPREFIX := 
+# automatic
+<F = $(notdir $<)
+# makefile (from 'Makefile', line 45)
+ROMFS := romfs
+# makefile (from 'Makefile', line 103)
+HFILES_BIN := 
+# default
+SUFFIXES := 
+# environment
+ALLUSERSPROFILE = C:\ProgramData
+# makefile (from 'Makefile', line 40)
+TARGET := Daybreak
+# makefile (from 'Makefile', line 98)
+LD := aarch64-none-elf-g++
+# environment
+SESSIONNAME = Console
+# makefile (from 'Makefile', line 60)
+CXXFLAGS := `aarch64-none-elf-pkg-config --cflags sdl2 SDL2_mixer SDL2_image` -Wall -O2 -ffunction-sections -march=armv8-a+crc+crypto -mtune=cortex-a57 -mtp=soft -fPIE   -D__SWITCH__ -fno-rtti -fno-exceptions
+# makefile (from '/opt/devkitpro//devkitA64/base_tools', line 33)
+STRIP := aarch64-none-elf-strip
+# default
+.FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell nocomment grouped-target extra-prereqs archives jobserver output-sync check-symlink load
+# environment
+PROCESSOR_REVISION = 0101
+# makefile (from '/opt/devkitpro//devkitA64/base_tools', line 29)
+CXX := aarch64-none-elf-g++
+# makefile (from '/opt/devkitpro//devkitA64/base_tools', line 28)
+CC := aarch64-none-elf-gcc
+# makefile (from '/opt/devkitpro//devkitA64/base_tools', line 32)
+OBJCOPY := aarch64-none-elf-objcopy
+# makefile (from 'Makefile', line 42)
+SOURCES := source
+# makefile (from 'Makefile', line 47)
+APP_TITLE := Daybreak
+# makefile (from 'Makefile', line 43)
+DATA := data
+# environment
+PROCESSOR_IDENTIFIER = AMD64 Family 23 Model 1 Stepping 1, AuthenticAMD
+# variable set hash-table stats:
+# Load=161/1024=16%, Rehash=0, Collisions=32/333=10%
+
+# Pattern-specific Variable Values
+
+# No pattern-specific variable values.
+
+# Directories
+
+# /home/julia/OneDrive/Desktop/Code/sdl2/Daybreak/data: could not be stat'd.
+# /home/julia/OneDrive/Desktop/Code/sdl2/Daybreak/source (device 849150804, inode 2533274791615464): 7 files, no impossibilities.
+ 
+# . (device 849150804, inode 5629499535432665): 15 files, no impossibilities.
+# source (device 849150804, inode 2533274791615464): 7 files, no impossibilities.
+# data: could not be stat'd.
+
+# 29 files, no impossibilities in 5 directories.
+
+# Implicit Rules
+
+%.a:
+#  recipe to execute (from '/opt/devkitpro//devkitA64/base_rules', line 6):
+	$(SILENTMSG) $(notdir $@)
+	@rm -f $@
+	$(SILENTCMD)$(AR) -rc $@ $^
+
+%.o: %.cpp
+#  recipe to execute (from '/opt/devkitpro//devkitA64/base_rules', line 13):
+	$(SILENTMSG) $(notdir $<)
+	$(SILENTCMD)$(CXX) -MMD -MP -MF $(DEPSDIR)/$*.d $(CXXFLAGS) -c $< -o $@ $(ERROR_FILTER)
+
+%.o: %.c
+#  recipe to execute (from '/opt/devkitpro//devkitA64/base_rules', line 18):
+	$(SILENTMSG) $(notdir $<)
+	$(SILENTCMD)$(CC) -MMD -MP -MF $(DEPSDIR)/$*.d $(CFLAGS) -c $< -o $@ $(ERROR_FILTER)
+
+%.o: %.s
+#  recipe to execute (from '/opt/devkitpro//devkitA64/base_rules', line 23):
+	@echo $(notdir $<)
+	$(SILENTCMD)$(CC) -MMD -MP -MF $(DEPSDIR)/$*.d -x assembler-with-cpp $(ASFLAGS) -c $< -o $@ $(ERROR_FILTER)
+
+%.o: %.S
+#  recipe to execute (from '/opt/devkitpro//devkitA64/base_rules', line 28):
+	$(SILENTMSG) $(notdir $<)
+	$(SILENTCMD)$(CC) -MMD -MP -MF $(DEPSDIR)/$*.d -x assembler-with-cpp $(ASFLAGS) -c $< -o $@ $(ERROR_FILTER)
+
+%.nacp: Makefile /opt/devkitpro//libnx/switch_rules /opt/devkitpro//devkitA64/base_rules /opt/devkitpro//devkitA64/base_tools
+#  recipe to execute (from '/opt/devkitpro//libnx/switch_rules', line 30):
+	@nacptool --create "$(APP_TITLE)" "$(APP_AUTHOR)" "$(APP_VERSION)" $@ $(NACPFLAGS)
+	@echo built ... $(notdir $@)
+
+%.npdm:
+#  recipe to execute (from '/opt/devkitpro//libnx/switch_rules', line 35):
+	@npdmtool $< $@
+	@echo built ... $(notdir $@)
+
+%.pfs0: %.nso
+#  recipe to execute (from '/opt/devkitpro//libnx/switch_rules', line 53):
+	$(make_pfs0)
+
+%.nsp: %.nso
+#  recipe to execute (from '/opt/devkitpro//libnx/switch_rules', line 60):
+	$(make_pfs0)
+
+%.nso: %.elf
+#  recipe to execute (from '/opt/devkitpro//libnx/switch_rules', line 64):
+	@elf2nso $< $@
+	@echo built ... $(notdir $@)
+
+%.nro: %.elf
+#  recipe to execute (from '/opt/devkitpro//libnx/switch_rules', line 69):
+	@elf2nro $< $@ $(NROFLAGS)
+	@echo built ... $(notdir $@)
+
+%.kip: %.elf
+#  recipe to execute (from '/opt/devkitpro//libnx/switch_rules', line 74):
+	@elf2kip $< $(APP_JSON) $@
+	@echo built ... $(notdir $@)
+
+%.elf:
+#  recipe to execute (from '/opt/devkitpro//libnx/switch_rules', line 79):
+	@echo linking $(notdir $@)
+	@$(LD) $(LDFLAGS) $(OFILES) $(LIBPATHS) $(LIBS) -o $@
+	@$(NM) -CSn $@ > $(notdir $*.lst)
+
+# 13 implicit rules, 0 (0.0%) terminal.
+# Files
+
+# Not a target:
+/opt/devkitpro//libnx/switch_rules:
+#  Implicit rule search has been done.
+#  Last modified 2021-10-02 10:59:15
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+Makefile:
+#  Implicit rule search has been done.
+#  Last modified 2022-05-12 14:16:06.6758501
+#  File has been updated.
+#  Successfully updated.
+
+clean:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 164):
+	@echo clean ...
+	@rm -fr $(BUILD) $(TARGET).nro $(TARGET).nacp $(TARGET).elf
+
+# Not a target:
+.DEFAULT:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+all: build
+#  Phony target (prerequisite of .PHONY).
+#  Command line target.
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has been updated.
+#  Needs to be updated (-q is set).
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/7=0%
+
+build:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  Implicit/static pattern stem: ''
+#  File does not exist.
+ 
+#  File has been updated.
+#  Needs to be updated (-q is set).
+# automatic
+# @ := build
+# automatic
+# * := 
+# automatic
+# < := 
+# automatic
+# + := 
+# automatic
+# % := 
+# automatic
+# ^ := 
+# automatic
+# ? := 
+# automatic
+# | := 
+# variable set hash-table stats:
+# Load=8/32=25%, Rehash=0, Collisions=2/17=12%
+#  recipe to execute (from 'Makefile', line 159):
+	@[ -d $@ ] || mkdir -p $@
+	@$(MAKE) --no-print-directory -C $(BUILD) -f $(CURDIR)/Makefile
+
+.SUFFIXES:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+.PHONY: build clean all
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+/opt/devkitpro//devkitA64/base_tools:
+#  Implicit rule search has been done.
+#  Last modified 2020-07-27 22:23:39
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+/opt/devkitpro//devkitA64/base_rules:
+#  Implicit rule search has been done.
+#  Last modified 2020-07-27 22:23:39
+#  File has been updated.
+#  Successfully updated.
+
+# files hash-table stats:
+# Load=10/1024=1%, Rehash=0, Collisions=0/32=0%
+# VPATH Search Paths
+
+# No 'vpath' search paths.
+
+# General ('VPATH' variable) search path:
+# /home/julia/OneDrive/Desktop/Code/sdl2/Daybreak/source:/home/julia/OneDrive/Desktop/Code/sdl2/Daybreak/data
+
+# strcache buffers: 1 (0) / strings = 47 / storage = 532 B / avg = 11 B
+# current buf: size = 8162 B / used = 532 B / count = 47 / avg = 11 B
+
+# strcache performance: lookups = 84 / hit rate = 44%
+# hash-table stats:
+# Load=47/8192=1%, Rehash=0, Collisions=0/84=0%
+# Finished Make data base on Thu May 12 17:40:49 2022
+
+ 
