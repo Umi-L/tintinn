@@ -2,7 +2,7 @@
 
 #include <switch.h>
 
-#include "types.hpp"
+#include "Types.hpp"
 
 class Input{
 public:

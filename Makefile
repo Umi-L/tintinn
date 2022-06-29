@@ -44,7 +44,7 @@ DATA		:=	data
 INCLUDES	:=	include source/include libs
 ROMFS		:=	romfs
 
-APP_TITLE   := Daybreak
+APP_TITLE   := Tintinn
 APP_AUTHOR  := Umi
 
 #---------------------------------------------------------------------------------
