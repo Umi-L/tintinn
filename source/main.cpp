@@ -9,6 +9,7 @@
 #include <SDL2/SDL_image.h>
 #include <SDL2/SDL_mixer.h>
 #include <switch.h>
+#include <entt.hpp>
 
 #include "Input.hpp"
 
@@ -31,6 +32,10 @@ int main(int argc, char* args[])
 
 	Input::init();
 
+	printf("Initializing Variables\n");
+
+	entt::registry registry;
+
 	printf("--Main loop Starting--\n");
 
 	//main loop
@@ -49,7 +54,7 @@ int main(int argc, char* args[])
 
 	printf("--Completed, Quitting--\n");
 
-	//close sockets
+	//close socket
     socketExit();
 
 	return 0;
